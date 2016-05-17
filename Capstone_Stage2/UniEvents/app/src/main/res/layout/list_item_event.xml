@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_gravity="center"
+    android:layout_margin="4dp"
+    card_view:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/even_list_image_height">
+
+            <ImageView
+                android:id="@+id/imageViewEvent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill"
+                android:contentDescription="@string/desc_event_image"
+                android:foreground="@drawable/gradient"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|bottom"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingMultiplier="0.9"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:contentDescription="@string/desc_event_title"
+                android:focusable="true"
+                android:nextFocusDown="@+id/textViewDate" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:contentDescription="@string/desc_event_date"
+            android:focusable="true"
+            android:nextFocusDown="@+id/textViewMajor" />
+
+        <TextView
+            android:id="@+id/textViewMajor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:contentDescription="@string/desc_targeted_students"
+            android:focusable="true"
+            android:nextFocusDown="@+id/textViewLocation"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/desc_event_location"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

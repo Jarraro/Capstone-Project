@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <integer name="list_column_count">1</integer>
+    <dimen name="detail_title_text_size">32sp</dimen>
+    <dimen name="detail_body_text_size">22sp</dimen>
+    <item name="detail_body_line_spacing_multiplier" format="float" type="fraction">1.25</item>
+    <dimen name="detail_text_margin">6dp</dimen>
+    <dimen name="detail_appbar_height">192dp</dimen>
+    <dimen name="even_list_image_height">120dp</dimen>
+    <dimen name="padding_bottom_for_ad">50dp</dimen>
+</resources>

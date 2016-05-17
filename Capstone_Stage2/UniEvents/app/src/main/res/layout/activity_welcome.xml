@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/welcome_title"
+        android:id="@+id/textViewWelcome"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/choose_major"
+        android:id="@+id/textView2"
+        android:layout_marginTop="32dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/computer_science"
+        android:contentDescription="@string/computer_science"
+        android:focusable="true"
+        android:nextFocusDown="@+id/checkBoxCG"
+        android:id="@+id/checkBoxCS"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/computer_graphics"
+        android:contentDescription="@string/computer_graphics"
+        android:focusable="true"
+        android:nextFocusDown="@+id/checkBoxEN"
+        android:id="@+id/checkBoxCG"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/engineering"
+        android:contentDescription="@string/engineering"
+        android:focusable="true"
+        android:nextFocusDown="@+id/checkBoxBS"
+        android:id="@+id/checkBoxEN"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/business"
+        android:contentDescription="@string/business"
+        android:focusable="true"
+        android:nextFocusDown="@+id/checkBoxAC"
+        android:id="@+id/checkBoxBS"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accounting"
+        android:id="@+id/checkBoxAC"
+        android:contentDescription="@string/accounting"
+        android:focusable="true"
+        android:nextFocusDown="@+id/switchNotifications"
+        android:checked="false" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_notifications_option"
+        android:contentDescription="@string/receive_notifications_switch"
+        android:focusable="true"
+        android:nextFocusDown="@+id/buttonDone"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/switchNotifications"
+        android:checked="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:id="@+id/buttonDone"
+        android:contentDescription="@string/desc_button_done"
+        android:focusable="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:onClick="saveData"
+        android:background="?colorPrimary"
+        android:textColor="@android:color/white" />
+</LinearLayout>
